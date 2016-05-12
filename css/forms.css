@@ -1,0 +1,625 @@
+/*------------------------------------*\
+    Globals
+\*------------------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+body {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+select,
+textarea,
+input[type] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
+
+/*------------------------------------*\
+    Signup Form
+\*------------------------------------*/
+
+.f1-container {
+  margin: 0 auto;
+  max-width: 360px;
+  margin-top: 50px;
+}
+
+.f1-form {
+  padding: 10px 20px 20px 20px;
+  background-color: #e4e4e4;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.f1-h1 {
+  color: #fff;
+  padding: 10px;
+  background: #676767;
+  text-align: center;
+  margin: 0;
+  border-radius: 10px 10px 0 0;
+  font-size: 24px;
+}
+
+.f1-date,
+.f1-write,
+.f1-submit {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b5b5b5;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.f1-submit {
+  margin-top: 20px;
+  background-color: #3DCE90;
+  border: 1px solid #06BD6F;
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 0 2px 1px #06BD6F;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  cursor: pointer;
+}
+
+.f1-submit:hover {
+  background-color: #1EAB6F;
+}
+
+.f1-label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #5a5a5a;
+}
+
+.field-48 {
+  width: 48.5%;
+  float: left;
+}
+
+.field-48-a {
+  margin-right: 3%;
+}
+
+/*------------------------------------*\
+    Search Form
+\*------------------------------------*/
+
+.f2-container {
+  margin: 0 auto;
+  max-width: 768px;
+  margin-top: 50px;
+}
+
+.f2-form {
+  padding: 20px;
+  overflow: hidden;
+  background: #e8075a;
+  background: -moz-linear-gradient(top,  #e8075a 1%, #6f084a 100%);
+  background: -webkit-linear-gradient(top,  #e8075a 1%,#6f084a 100%);
+  background: linear-gradient(to bottom,  #e8075a 1%,#6f084a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8075a', endColorstr='#6f084a',GradientType=0 );
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.f2-write,
+.f2-select,
+.f2-submit {
+  display: block;
+  float: left;
+  height: 45px;
+  margin: 0 1%;
+  padding: 5px;
+  background-color: #ff2459;
+  color: #fff;
+  border: none;
+  border-top: 1px solid #ffb2C4;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.f2-write {
+  width: 50%;
+  padding: 10px;
+}
+
+.f2-select {
+  width: 25%;
+}
+
+.f2-submit {
+  width: 19%;
+  background-color: #480d39;
+  color: #fff;
+  border: none;
+  border-top: 1px solid #ffb2C4;
+}
+
+.f2-submit:hover {
+  background-color: #861483;
+}
+
+/*------------------------------------*\
+    Questionnaire
+\*------------------------------------*/
+
+.f3-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.f3-form {
+  background-color: #1E655A;
+  padding-bottom: 20px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.f3-question {
+  margin-top: 0;
+  padding: 15px 20px;
+  background-color: #EC2020;
+  font-size: 18px;
+  color: #fff;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.f3-label {
+  color: #fff;
+}
+
+.f3-write {
+  width: 150px;
+  margin-left: 10px;
+  padding: 5px 10px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #bbb;
+  color: #1E655A;
+}
+
+.f3-submit {
+  border: none;
+  display: block;
+  margin: 0 30px;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-family: inherit;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #EC2020;
+  float: right;
+  border-bottom: 2px solid #AF1B1B;
+}
+
+.f3-submit:hover {
+  background-color: #FF3131;
+}
+
+.f3-submit:active {
+  position: relative;
+  top: 3px;
+  border-bottom-color: #FF3131;
+}
+
+.option {
+  padding: 5px 10px;
+  margin: 0 20px 10px;
+}
+
+/*------------------------------------*\
+    Login Form
+\*------------------------------------*/
+
+.f4-container {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.f4-form {
+  overflow: hidden;
+  background: #03283e;
+  padding-top: 30px;
+}
+
+.f4-write,
+.f4-submit {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+}
+
+.f4-write {
+  background: #03283e;
+  color: #FFFFFF;
+  font-size: 14px;
+  border-bottom: 1px solid #859DAD;
+}
+
+.f4-store-info {
+  float: left;
+  width: 50%;
+}
+
+.f4-check {
+  position: relative;
+  top: 2px;
+  margin-right: 3px;
+}
+
+.f4-label-check {
+  font-size: 14px;
+  color: #fff;
+}
+
+.f4-label {
+  color: #fff;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.f4-submit {
+  width: 100%;
+  background-color: #ff1055;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 15px 0;
+}
+
+.f4-submit:hover {
+  background-color: #ff2b7b;
+}
+
+.f4-submit:active {
+  -webkit-box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.field-top {
+  padding: 0 40px;
+  margin-bottom: 30px;
+}
+
+.field-bottom {
+  margin-top: 30px;
+}
+
+/*------------------------------------*\
+    Color Building
+\*------------------------------------*/
+
+.f5-container {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.f5-form {
+  background-color: whitesmoke;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.f5-label {
+  color: #000;
+  width: 15%;
+  margin-right: 5%;
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+.range {
+  margin-bottom: 20px;
+}
+
+.f5-range {
+  vertical-align: middle;
+  width: 75%;
+  float: right;
+}
+
+.f5-write {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+}
+
+.range-red {
+  border-bottom: 3px solid red;
+}
+
+.range-green {
+  border-bottom: 3px solid green;
+}
+
+.range-blue {
+  border-bottom: 3px solid blue;
+}
+
+.range-alpha {
+  border-bottom: 3px solid white;
+}
+
+/*------------------------------------*\
+    Shipping/Billing Form
+\*------------------------------------*/
+
+.f6-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.f6-form {
+  padding: 40px;
+  border: 3px dashed #333;
+  border-radius: 10px;
+  background: #ffe100;
+}
+
+.f6-form h1 {
+  color: #000;
+}
+
+.billing {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.shipping {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.f6-field {
+  margin: 20px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.f6-write {
+  width: 85%;
+  float: right;
+  padding: 10px;
+  border: 1px solid #333;
+}
+
+.f6-label {
+  display: block;
+  width: 15%;
+  float: left;
+  color: #000;
+}
+
+.f6-submit {
+  float: right;
+  width: 40%;
+  padding: 12px;
+  background-color: #069E2C;
+  border: 0;
+  font-size: 18px;
+  font-family: inherit;
+  color: #fff;
+  border: 1px solid #014A13;
+  text-shadow: 1px 1px 0 #014a13;
+  cursor: pointer;
+}
+
+.f6-submit:hover {
+  background-color: #006519;
+}
+
+.f6-submit:active {
+  -webkit-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.field-50 {
+  width: 50%;
+  float: left;
+}
+
+.field-50-b {
+  width: 45%;
+  margin-left: 5%;
+}
+
+.input-70 {
+  width: 70%;
+}
+
+.name-30 {
+  width: 30%;
+}
+
+.store-details {
+  background: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.f6-check {
+  vertical-align: middle;
+}
+
+/*------------------------------------*\
+    Scheduling Form
+\*------------------------------------*/
+
+.f7-container {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.f7-form {
+  background-color: #C6F0FF;
+  border-bottom: 3px solid #536E77;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.appointment {
+  margin-bottom: 20px;
+}
+
+.f7-h1 {
+  color: #0D3044;
+}
+
+.f7-date,
+.f7-write,
+.f7-message {
+  display: block;
+  width: 100%;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: none;
+  border-bottom: 1px solid #96BFD6;
+}
+
+.f7-submit {
+  background: #AC11EA;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
+  margin-top: 10px;
+  border-bottom: 1px solid #6B0494;
+  text-shadow: 0 1px 0 #6B0494;
+  cursor: pointer;
+}
+
+.f7-submit:hover {
+  background-color: #8000B3;
+}
+
+.f7-date,
+.f7-write {
+  padding: 10px;
+}
+
+.f7-label {
+  font-size: 18px;
+  color: #0F2D3E;
+}
+
+/*------------------------------------*\
+    Credit Card Form
+\*------------------------------------*/
+
+.f8-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.f8-form {
+  padding: 20px 30px;
+  color: #fff;
+  border-radius: 15px;
+  background: #16bdf9;
+  background: -moz-linear-gradient(top,  #16bdf9 1%, #035fa5 99%);
+  background: -webkit-linear-gradient(top,  #16bdf9 1%,#035fa5 99%);
+  background: linear-gradient(to bottom,  #16bdf9 1%,#035fa5 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16bdf9', endColorstr='#035fa5',GradientType=0 );
+}
+
+.field-70,
+.field-30 {
+  float: left;
+}
+
+.field-70 {
+  width: 70%;
+}
+
+.field-30 {
+  width: 25%;
+  margin-left: 5%;
+}
+
+.f8-label,
+.f8-write,
+.f8-select {
+  display: block;
+}
+
+.f8-write,
+.f8-select {
+  width: 100%;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  border: 1px solid #1170AF;
+  box-shadow: 0 1px 0 #B1E2FF;
+}
+
+.f8-select {
+  width: 25%;
+  float: left;
+}
+
+.f8-label {
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 #0d5e90;
+  margin-bottom: 3px;
+}
+
+.f8-h1 {
+  text-shadow: 1px 1px 0 #035FA5;
+}
+
+.year {
+  margin-left: 5%;
+}
+
+.f8-submit {
+  display: inline-block;
+  width: 40%;
+  margin-top: 4px;
+  margin-left: 5%;
+  padding: 8px;
+  background-color: #FF1966;
+  border: 0;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 2px 0 #ab0039;
+  box-shadow: 0 1px 0 #AB0039;
+}
+
+.f8-submit:active {
+  position: relative;
+  top: 2px;
+}
