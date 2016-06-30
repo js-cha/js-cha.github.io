@@ -34,28 +34,33 @@
               <li><a href="forms-8.html">Credit Card</a></li>
             </ul>
           </div>
-        <h2 class="main-subheading">Login Form</h2>
-        <div class="f4-container">
-          <div class="f4-form">
-            <div class="field-top">
-              <label class="f4-label">Username</label>
-              <input type="text" class="f4-write">
-              <label class="f4-label">Password</label>
-              <input type="password" class="f4-write">
-              <div class="f4-store-info">
-                <input type="checkbox" class="f4-check" checked="true">
-                <label class="f4-label-check">Remember me</label>
+          <h2 class="main-subheading">Login Form</h2>
+          <div class="f4-container">
+            <form class="f4-form">
+              <div class="field-top">
+                <label class="f4-label">Username</label>
+                <input type="text" class="f4-write username">
+                <label class="f4-label">Password</label>
+                <input type="password" class="f4-write password">
+                <div class="f4-store-info">
+                  <input type="checkbox" class="f4-check" checked="true">
+                  <label class="f4-label-check">Remember me</label>
+                </div>
               </div>
-            </div>
-            <div class="clear"></div>
-            <div class="field-bottom">
-              <input type="submit" value="Sign in &nbsp; &rarr;" class="f4-submit">
-            </div>
+              <div class="clear"></div>
+              <div class="field-bottom">
+                <input type="submit" value="Sign in &nbsp; &rarr;" class="f4-submit">
+              </div>
+            </form>
           </div>
-        </div>
         </div>
       </div>
     </div>
 
+    <script src="js/validator.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      window.onload = validate4();
+    </script>
   </body>
 </html>

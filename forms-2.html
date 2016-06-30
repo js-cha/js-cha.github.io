@@ -34,25 +34,30 @@
               <li><a href="forms-8.html">Credit Card</a></li>
             </ul>
           </div>
-        <h2 class="main-subheading">Search Form</h2>
-        <div class="f2-container">
-          <div class="f2-form">
-            <div class="clear"></div>
-            <input type="search" name="search" value="Search" class="f2-write" >
-            <select class="f2-select">
-              <option>Images</option>
-              <option>Video</option>
-              <option>News</option>
-              <option>Journal</option>
-              <option>Archived</option>
-              <option>Featured</option>
-            </select>
-            <input type="submit" value="Search" class="f2-submit">
+          <h2 class="main-subheading">Search Form</h2>
+          <div class="f2-container">
+            <form class="f2-form">
+              <div class="clear"></div>
+              <input type="text" name="search" placeholder="Search" class="f2-write search">
+              <select class="f2-select">
+                <option>Images</option>
+                <option>Video</option>
+                <option>News</option>
+                <option>Journal</option>
+                <option>Archived</option>
+                <option>Featured</option>
+              </select>
+              <input type="submit" value="Search" class="f2-submit">
+            </form>
           </div>
-        </div>
         </div>
       </div>
     </div>
 
+    <script src="js/validator.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      window.onload = validate2();
+    </script>
   </body>
 </html>

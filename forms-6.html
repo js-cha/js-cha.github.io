@@ -34,68 +34,73 @@
               <li><a href="forms-8.html">Credit Card</a></li>
             </ul>
           </div>
-        <h2 class="main-subheading">Shipping/Billing Form</h2>
-        <div class="f6-container">
-          <div class="f6-form">
-            <section class="billing">
-              <h1>Billing Information</h1>
-              <div class="f6-field field-50">
-                <label class="f6-label name-30">First Name</label>
-                <input type="text" name="firstname" class="f6-write input-70">
-              </div>
-              <div class="f6-field field-50 field-50-b">
-                <label class="f6-label name-30">Last Name</label>
-                <input type="text" name="lastname" class="f6-write input-70" >
-              </div>
-              <div class="f6-field">
-                <label class="f6-label">Address</label>
-                <input type="text" name="address" class="f6-write">
-              </div>
-              <div class="f6-field">
-                <label class="f6-label">City</label>
-                <input type="text"name="city" class="f6-write" >
-              </div>
-              <div class="f6-field">
-                <label class="f6-label">Country</label>
-                <input type="text" name="country" class="f6-write">
-              </div>
-            </section>
-            <div class="clear"></div>
-            <section class="shipping">
-              <h1>Shipping Information</h1>
-              <div class="store-details">
-                <input type="checkbox" class="f6-check" checked="true">
-                <label for="same">Same as billing information</label>
-              </div>
-              <div class="f6-field field-50">
-                <label class="f6-label name-30">First Name</label>
-                <input type="text" name="firstname" class="f6-write input-70">
-              </div>
-              <div class="f6-field field-50 field-50-b">
-                <label class="f6-label name-30">Last Name</label>
-                <input type="text" name="lastname" class="f6-write input-70" >
-              </div>
-              <div class="f6-field">
-                <label class="f6-label">Address</label>
-                <input type="text" name="address" class="f6-write">
-              </div>
-              <div class="f6-field">
-                <label class="f6-label">City</label>
-                <input type="text"name="city" class="f6-write" >
-              </div>
-              <div class="f6-field">
-                <label class="f6-label">Country</label>
-                <input type="text" name="country" class="f6-write">
-              </div>
+          <h2 class="main-subheading">Shipping/Billing Form</h2>
+          <div class="f6-container">
+            <form class="f6-form">
+              <section class="billing">
+                <h1>Billing Information</h1>
+                <div class="f6-field field-50">
+                  <label class="f6-label name-30">First Name</label>
+                  <input type="text" name="firstname" class="f6-write input-70">
+                </div>
+                <div class="f6-field field-50 field-50-b">
+                  <label class="f6-label name-30">Last Name</label>
+                  <input type="text" name="lastname" class="f6-write input-70">
+                </div>
+                <div class="f6-field">
+                  <label class="f6-label">Address</label>
+                  <input type="text" name="address" class="f6-write">
+                </div>
+                <div class="f6-field">
+                  <label class="f6-label">City</label>
+                  <input type="text" name="city" class="f6-write">
+                </div>
+                <div class="f6-field">
+                  <label class="f6-label">Country</label>
+                  <input type="text" name="country" class="f6-write">
+                </div>
+              </section>
               <div class="clear"></div>
-            </section>
-            <button type="button" value="Submit" class="f6-submit">Next Step</button>
-            <div class="clear"></div>
+              <section class="shipping">
+                <h1>Shipping Information</h1>
+                <div class="store-details">
+                  <input type="checkbox" class="f6-check">
+                  <label for="same">Same as billing information</label>
+                </div>
+                <div class="f6-field field-50">
+                  <label class="f6-label name-30">First Name</label>
+                  <input type="text" name="firstname" class="f6-write input-70">
+                </div>
+                <div class="f6-field field-50 field-50-b">
+                  <label class="f6-label name-30">Last Name</label>
+                  <input type="text" name="lastname" class="f6-write input-70" >
+                </div>
+                <div class="f6-field">
+                  <label class="f6-label">Address</label>
+                  <input type="text" name="address" class="f6-write">
+                </div>
+                <div class="f6-field">
+                  <label class="f6-label">City</label>
+                  <input type="text" name="city" class="f6-write" >
+                </div>
+                <div class="f6-field">
+                  <label class="f6-label">Country</label>
+                  <input type="text" name="country" class="f6-write">
+                </div>
+                <div class="clear"></div>
+              </section>
+              <button type="submit" value="Submit" class="f6-submit">Next Step</button>
+              <div class="clear"></div>
+            </form>
           </div>
-        </div>
         </div>
       </div>
     </div>
 
+    <script src="js/validator.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      window.onload = validate6();
+    </script>
   </body>
 </html>

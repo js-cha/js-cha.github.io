@@ -34,37 +34,42 @@
               <li><a href="forms-8.html">Credit Card</a></li>
             </ul>
           </div>
-        <h2 class="main-subheading">Questionnaire Form</h2>
-        <div class="f3-container">
-          <div class="f3-form">
-            <p class="f3-question">Q1. What is your favorite type of meat?</p>
-            <div class="option">
-              <input type="radio" name="meat" value="chicken" class="f3-radio">
-              <label class="f3-label">Chicken</label>
-            </div>
-            <div class="option">
-              <input type="radio" name="meat" value="beef" class="f3-radio">
-              <label class="f3-label">Beef</label>
-            </div>
-            <div class="option">
-              <input type="radio" name="meat" value="pork" class="f3-radio">
-              <label class="f3-label">Pork</label>
-            </div>
-            <div class="option">
-              <input type="radio" name="meat" value="lamb" class="f3-radio">
-              <label class="f3-label">Lamb</label>
-            </div>
-            <div class="option">
-              <input type="radio" name="meat" value="other">
-              <label class="f3-label">Other</label>
-              <input type="text" placeholder="Type here" name="other" class="f3-write">
-            </div>
-            <button type="button" value="Submit" class="f3-submit">Submit</button>
+          <h2 class="main-subheading">Questionnaire Form</h2>
+          <div class="f3-container">
+            <form class="f3-form">
+              <p class="f3-question">Q1. What is your favorite type of meat?</p>
+              <div class="option">
+                <input type="radio" name="meat" value="chicken" class="f3-radio">
+                <label class="f3-label">Chicken</label>
+              </div>
+              <div class="option">
+                <input type="radio" name="meat" value="beef" class="f3-radio">
+                <label class="f3-label">Beef</label>
+              </div>
+              <div class="option">
+                <input type="radio" name="meat" value="pork" class="f3-radio">
+                <label class="f3-label">Pork</label>
+              </div>
+              <div class="option">
+                <input type="radio" name="meat" value="lamb" class="f3-radio">
+                <label class="f3-label">Lamb</label>
+              </div>
+              <div class="option">
+                <input type="radio" name="meat" value="other" class="f3-radio">
+                <label class="f3-label">Other</label>
+                <input type="text" placeholder="Type here" name="other" class="f3-write">
+              </div>
+              <button type="submit" value="Submit" class="f3-submit">Submit</button>
+            </form>
           </div>
-        </div>
         </div>
       </div>
     </div>
 
+    <script src="js/validator.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      window.onload = validate3();
+    </script>
   </body>
 </html>

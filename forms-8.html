@@ -34,62 +34,67 @@
               <li><a href="forms-8.html">Credit Card</a></li>
             </ul>
           </div>
-        <h2 class="main-subheading">Credit Card Form</h2>
-        <div class="f8-container">
-          <div class="f8-form">
-            <h1 class="f8-h1">Payment Details</h1>
-            <label class="f8-label">Full Name</label>
-            <input type="text" name="fullname" class="f8-write" >
-            <div class="field-70">
-              <label class="f8-label">Card Number</label>
-              <input type="text" name="cardnumber" maxlength="19" class="f8-write" >
-            </div>
-            <div class="field-30">
-              <label class="f8-label">CSV</label>
-              <input type="text" name="csv" maxlength="3" class="f8-write" >
-            </div>
-            <div class="clear"></div>
-            <label class="f8-label">Card Expiration</label>
-            <select name="expiration" class="f8-select" >
-              <option value="month">Month</option>
-              <option value="jan">01</option>
-              <option value="feb">02</option>
-              <option value="mar">03</option>
-              <option value="apr">04</option>
-              <option value="may">05</option>
-              <option value="jun">06</option>
-              <option value="jul">07</option>
-              <option value="aug">08</option>
-              <option value="sep">09</option>
-              <option value="oct">10</option>
-              <option value="nov">11</option>
-              <option value="dec">12</option>
-            </select>
-            <select name="expiration" class="f8-select year">
-              <option value="year">Year</option>
-              <option value="16">16</option>
-              <option value="17">17</option>
-              <option value="18">18</option>
-              <option value="19">19</option>
-              <option value="20">20</option>
-              <option value="21">21</option>
-              <option value="22">22</option>
-              <option value="23">23</option>
-              <option value="24">24</option>
-              <option value="25">25</option>
-              <option value="26">26</option>
-              <option value="27">27</option>
-              <option value="28">28</option>
-              <option value="29">29</option>
-              <option value="30">30</option>
-            </select>
-            <button type="button" value="Submit" class="f8-submit">Pay Now</button>
-            <div class="clear"></div>
+          <h2 class="main-subheading">Credit Card Form</h2>
+          <div class="f8-container">
+            <form class="f8-form">
+              <h1 class="f8-h1">Payment Details</h1>
+              <label class="f8-label">Full Name</label>
+              <input type="text" name="fullname" class="f8-write fullname">
+              <div class="field-70">
+                <label class="f8-label">Card Number</label>
+                <input type="text" name="cardnumber" maxlength="19" class="f8-write cardno" >
+              </div>
+              <div class="field-30">
+                <label class="f8-label">CSV</label>
+                <input type="text" name="csv" maxlength="3" class="f8-write csv" >
+              </div>
+              <div class="clear"></div>
+              <label class="f8-label">Card Expiration</label>
+              <select name="expiration" class="f8-select month">
+                <option value="none">Month</option>
+                <option value="jan">01</option>
+                <option value="feb">02</option>
+                <option value="mar">03</option>
+                <option value="apr">04</option>
+                <option value="may">05</option>
+                <option value="jun">06</option>
+                <option value="jul">07</option>
+                <option value="aug">08</option>
+                <option value="sep">09</option>
+                <option value="oct">10</option>
+                <option value="nov">11</option>
+                <option value="dec">12</option>
+              </select>
+              <select name="expiration" class="f8-select year">
+                <option value="none">Year</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+              </select>
+              <button type="submit" value="Submit" class="f8-submit">Pay Now</button>
+              <div class="clear"></div>
+            </form>
           </div>
-        </div>
         </div>
       </div>
     </div>
 
+    <script src="js/validator.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      window.onload = validate8();
+    </script>
   </body>
 </html>

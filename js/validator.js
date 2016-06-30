@@ -6,6 +6,9 @@
     var atSymbol = input.indexOf("@");
     var firstPart = input.substr(0, atSymbol);
     var lastPart = input.substr(atSymbol + 1);
+    if (validator.isEmpty(lastPart) == true){
+      return false;
+    }
     return (atSymbol > 0 && typeof firstPart && typeof lastPart == "string");
   };
 
@@ -250,7 +253,7 @@
         filteredInput += input[i];
       }
     }
-    return filteredInput.length >= 16 && validator.isAlphaNumeric(filteredInput) == true;
+    return validator.isBetween(filteredInput.length, 16, 19) == true && validator.isAlphaNumeric(filteredInput) == true;
   };
 
   validator.isHex = function(input){
@@ -326,4 +329,5 @@
     return true;
   };
 
+  window.validator = validator;
 })(window);

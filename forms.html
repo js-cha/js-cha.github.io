@@ -48,11 +48,11 @@
               </div>
               <div class="clear"></div>
               <label class="f1-label">Email Address</label>
-              <input type="email" name="email" class="f1-write email">
+              <input type="text" name="email" class="f1-write email">
               <label class="f1-label">Password</label>
               <input type="password" name="password" class="f1-write password">
-              <label class="f1-label dob">Date of Birth</label>
-              <input type="date" class="f1-date">
+              <label class="f1-label">Date of Birth</label>
+              <input type="date" class="f1-date dob">
               <input type="submit" value="Submit" class="f1-submit" >
             </form>
           </div>
@@ -62,5 +62,8 @@
 
     <script src="js/validator.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      window.onload = validate1();
+    </script>
   </body>
 </html>
