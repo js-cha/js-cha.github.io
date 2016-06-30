@@ -25,6 +25,14 @@ input[type] {
   clear: both;
 }
 
+.valid {
+  border: 1px solid #00ff5a;
+}
+
+.invalid {
+  border: 1px solid #ec2020;
+}
+
 /*------------------------------------*\
     Signup Form
 \*------------------------------------*/
