@@ -26,11 +26,11 @@ input[type] {
 }
 
 .valid {
-  border: 1px solid #00ff5a;
+  border: 1px solid #00ff5a !important;
 }
 
 .invalid {
-  border: 1px solid #ec2020;
+  border: 1px solid #ec2020 !important;
 }
 
 /*------------------------------------*\
