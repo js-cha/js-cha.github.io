@@ -53,6 +53,7 @@
 }
 
 .screen {
+  text-align: right;
   box-sizing: border-box;
   width: 290px;
   margin: 5px 5px 10px 5px;
@@ -79,6 +80,10 @@
 
 .operation:hover {
   background-color: #83D4E2;
+}
+
+.equals {
+  background-color: #08bd51;
 }
 
 .del,

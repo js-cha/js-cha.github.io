@@ -24,7 +24,7 @@
         <div class="showcase">
           <div class="calculator">
             <div class="row">
-              <input type="text" class="screen">
+              <input type="text" class="screen" value="" placeholder="0" readonly>
             </div>
             <div class="row">
               <div class="block num"><div class="node">7</div></div>
@@ -47,12 +47,12 @@
             <div class="row">
               <div class="block num"><div class="node">0</div></div>
               <div class="block num"><div class="node">.</div></div>
-              <div class="block operation equals"><div class="node">=</div></div>
-              <div class="block operation multiply"><div class="node">X</div></div>
+              <div class="block equals"><div class="node">=</div></div>
+              <div class="block operation multiply"><div class="node">*</div></div>
             </div>
             <div class="row">
-              <div class="block block-50 operation clear"><div class="node">C</div></div>
-              <div class="block block-50 operation del"><div class="node">DEL</div></div>
+              <div class="block block-50 clear"><div class="node">C</div></div>
+              <div class="block block-50 del"><div class="node">DEL</div></div>
             </div>
           </div>
         </div>
@@ -60,5 +60,9 @@
       </div>
     </div>
 
+    <script src="js/calculator.js"></script>
+    <script>
+      window.onload = calculate();
+    </script>
   </body>
 </html>

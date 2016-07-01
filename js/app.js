@@ -147,7 +147,7 @@ function validate7(){
       i++
     }
 
-    if (isEmpty == true && isNumber == true && isAfterToday == true && isEmail == true){
+    if (isEmpty && isNumber && isAfterToday && isEmail){
       form7.className = "f7-form valid";
     } else {
       form7.className = "f7-form invalid";
@@ -183,7 +183,7 @@ function validate8(){
       i++
     }
 
-    if (isCreditCard == true && isFullName == true && isCSV == true && isExpiry == true && isTrimmed == true){
+    if (isCreditCard && isFullName && isCSV && isExpiry && isTrimmed){
       form8.className = "f8-form valid";
     } else {
       form8.className = "f8-form invalid";
