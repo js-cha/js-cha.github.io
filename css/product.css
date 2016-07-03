@@ -98,6 +98,11 @@ body {
   color: #fff;
 }
 
+.unit-price::before {
+  content: "$";
+  font-weight: normal;
+}
+
 .unit-qty {
   float: right;
   width: 50px;
