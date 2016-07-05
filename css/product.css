@@ -275,3 +275,14 @@ body {
   background-color: #565656;
   border-color: #565656;
 }
+
+.added {
+  pointer-events: none;
+  cursor: default;
+  background: #24bb22;
+}
+
+.added::before {
+  content: "\2713";
+  line-height: 1;
+}
