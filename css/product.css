@@ -286,3 +286,16 @@ body {
   content: "\2713";
   line-height: 1;
 }
+
+.hidden {
+  display: none;
+}
+
+.open-cart {
+  background: #333;
+  font-weight: bold;
+  color: #fff;
+  border: 0;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
