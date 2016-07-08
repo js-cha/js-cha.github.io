@@ -36,32 +36,41 @@
 
   promoBtn.onclick = function(){
     var promoCode = promoField.value;
-    if (promoCode == "OVERW10"){
-      // TODO: Add item specific discount
-    } else if (cart.promos.hasOwnProperty(promoCode) && cart.discounted == false){
-      var deductedValue = cart.promos[promoCode];
-      cart.discounted = true;
-      cart.promoCodeApplied = promoCode;
-      cart.discountPercent = deductedValue;
-      updateTotal();
-      codeApplied.innerHTML = "Promo code applied: " + "<strong>"+promoCode+"</strong>";
-      deducted.innerHTML = "Discount: " + deductedValue * 100 + "%" + " off total order";
-      codeApplied.classList.remove('hidden');
-      deducted.classList.remove('hidden');
-    } else if (promoCode.length <= 0){
+    if (promoCode.length <= 0){
       return false;
+    } else if (cart.discounted == true){
+      alert("Only one promo code per transaction can be used");
     } else {
-      alert("Only 1 promo code per transaction is allowed");
+      applyPromoCode(promoCode);
     }
+  };
+
+  function applyPromoCode(code){
+    var overWatchIndex = getItemIndex("pcg01");
+    var deductedValue = cart.promos[code];
+    if (code == "OVERW10" && overWatchIndex >= 0){
+      deducted.innerHTML = "Discount: " + deductedValue * 100 + "%" + " off Overwatch order";
+      cart.items[overWatchIndex].discountedPrice = (cart.items[overWatchIndex].price * (1 - deductedValue)).toFixed(2);
+    } else if (cart.promos.hasOwnProperty(code) && cart.discounted == false && code !== "OVERW10"){
+      cart.discountPercent = deductedValue;
+      deducted.innerHTML = "Discount: " + deductedValue * 100 + "%" + " off total order";
+    }
+    cart.discounted = true;
+    cart.promoCodeApplied = code;
+    updateTotal();
+    codeApplied.innerHTML = "Promo code applied: " + "<strong>"+code+"</strong>";
+    codeApplied.classList.remove('hidden');
+    deducted.classList.remove('hidden');
   };
 
   function resetPromoCode(){
     promoField.value = "";
     cart.discounted = false;
+    cart.discountPercent = 0;
     codeApplied.classList.add('hidden');
     deducted.classList.add('hidden');
     updateTotal();
-  }
+  };
 
   function getItemIndex(id){
     var len = cart.items.length;
@@ -157,7 +166,11 @@
       return false;
     }
     for (i=0; i < len; i++){
-      result.push(cart.items[i].price * cart.items[i].qty);
+      if (cart.items[i].discountedPrice){
+        result.push(cart.items[i].discountedPrice * cart.items[i].qty);
+      } else {
+        result.push(cart.items[i].price * cart.items[i].qty);
+      }
     }
     result = result.reduce(function(a, b){
       return a + b;
