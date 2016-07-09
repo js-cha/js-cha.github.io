@@ -36,7 +36,7 @@
 
   promoBtn.onclick = function(){
     var promoCode = promoField.value;
-    if (promoCode.length <= 0){
+    if (promoCode.length <= 0 || cart.promos.hasOwnProperty(promoCode) == false){
       return false;
     } else if (cart.discounted == true){
       alert("Only one promo code per transaction can be used");
@@ -51,9 +51,11 @@
     if (code == "OVERW10" && overWatchIndex >= 0){
       deducted.innerHTML = "Discount: " + deductedValue * 100 + "%" + " off Overwatch order";
       cart.items[overWatchIndex].discountedPrice = (cart.items[overWatchIndex].price * (1 - deductedValue)).toFixed(2);
-    } else if (cart.promos.hasOwnProperty(code) && cart.discounted == false && code !== "OVERW10"){
+    } else if (code !== "OVERW10"){
       cart.discountPercent = deductedValue;
       deducted.innerHTML = "Discount: " + deductedValue * 100 + "%" + " off total order";
+    } else {
+      return false;
     }
     cart.discounted = true;
     cart.promoCodeApplied = code;
