@@ -1,5 +1,5 @@
 function calculate(){
-  var numOps = document.querySelectorAll('.num, .operation'),
+  var numOps =  Array.prototype.slice.call(document.querySelectorAll('.num, .operation')),
       clear = document.querySelector('.clear'),
       del = document.querySelector('.del'),
       screen = document.querySelector('.screen'),

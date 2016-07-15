@@ -30,7 +30,7 @@ input[type] {
 }
 
 .invalid {
-  border: 1px solid #ec2020 !important;
+  border: 2px solid #ec2020 !important;
 }
 
 /*------------------------------------*\

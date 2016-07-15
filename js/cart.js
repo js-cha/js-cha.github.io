@@ -12,7 +12,7 @@
     discountPercent: 0
   };
 
-  var addToCartBtns = document.querySelectorAll('.add-to-cart');
+  var addToCartBtns =  Array.prototype.slice.call(document.querySelectorAll('.add-to-cart'));
   var cartSummary = document.querySelector('.cart-summary');
   var cartTotalPrice = document.querySelector('.amount');
   var codeApplied = document.querySelector('.code-added');
@@ -142,13 +142,13 @@
       cart.items.push({id: id, title: title, price: price, qty: qty, subtotal: price * qty});
     }
     addMarkup(id, title, price, qty, img);
-    cartQty = document.querySelectorAll('.cart-unit-qty');
+    cartQty = Array.prototype.slice.call(document.querySelectorAll('.cart-unit-qty'));
     updateCartQty(id);
     if (shoppingCart.classList.contains('hidden')){
       shoppingCart.classList.toggle('hidden');
     }
     cartSummary.scrollIntoView();
-    removeItemBtns = document.querySelectorAll('.remove-product');
+    removeItemBtns = Array.prototype.slice.call(document.querySelectorAll('.remove-product'));
     removeItemBtns.forEach(function(item, index, array){
       item.onclick = removeItem;
     });
