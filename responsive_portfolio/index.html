@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="stylesheet" href="css/embed.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
   </head>
   <body>
@@ -162,9 +163,69 @@
               </div>
               <div class="slide slide--4">
                 <div class="slide__frame">
-                  <div class="button button-sm">A Small Button</div>
-                  <div class="button button-md">A Medium Button</div>
-                  <div class="button button-lg">A Large Button</div>
+                  <div class="accordion vertical">
+                    <ul>
+                      <!-- Item 1 -->
+                      <li>
+                        <input type="radio" id="radio-1" name="radio-accordion" checked="checked" />
+                        <label for="radio-1">Appetizers</label>
+                        <div class="content">
+                          <h3>Check our our tasty apps!</h3>
+                          <p><strong>Happy hour menu - half off!!</strong></p>
+                            <ul>
+                              <li>Chicken Wings (6) - 5.99$</li>
+                              <li>Calamari - 7.99$</li>
+                              <li>Garlic breaded pickles - 4.59$</li>
+                            </ul>
+                        </div>
+                      </li>
+                      <!-- Item 2 -->
+                      <li>
+                        <input type="radio" id="radio-2" name="radio-accordion" />
+                        <label for="radio-2">Entrees</label>
+                        <div class="content">
+                          <h3>Choose from a wide range of pastas, combos and signature dishes</h3>
+                          <p><strong>Pastas</strong></p>
+                            <ul>
+                              <li>Chicken Picatta - 14.99$</li>
+                              <li>Chicken Pollo - 12.99$</li>
+                              <li>Lasagna (Chicken/beef) - 10.99$</li>
+                            </ul>
+                          <p><strong>Combos</strong></p>
+                            <ul>
+                              <li>Italian Sausage & Beef Combo - 15.99$</li>
+                              <li>Mac n Cheese with Chicken Tenders - 8.99$</li>
+                            </ul>
+                        </div>
+                      </li>
+                      <!-- Item 3 -->
+                      <li>
+                        <input type="radio" id="radio-3" name="radio-accordion" />
+                        <label for="radio-3">Desserts</label>
+                        <div class="content">
+                          <h3>New Summer specials!!</h3>
+                          <p><strong>Shakes and Ice Creams</strong></p>
+                            <ul>
+                              <li>Turtle Caramel Shake - 6.99$</li>
+                              <li> Chocolate Brownie Bite- 4.99$</li>
+                            </ul>
+                        </div>
+                      </li>
+                      <!-- Placeholder for Item 4 -->
+                      <li>
+                        <input type="radio" id="radio-4" name="radio-accordion" />
+                        <label for="radio-4">Soups & Salads</label>
+                        <div class="content">
+                          <h3>New Delicious Heart Warming Soups!</h3>
+                          <p><strong>Vegetarian</strong></p>
+                            <ul>
+                              <li>Potato and leek - 11.99$</li>
+                              <li>Chilli pumpkin and carrot - 10.99$</li>
+                            </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
                 <label for="slide-3-z" class="carousel__left"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
                 <label for="slide-1-z" class="carousel__right"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
@@ -244,7 +305,9 @@
               <div class="slide slide--4">
                 <div class="slide__frame">
                   <div class="button button-sm">A Small Button</div>
+                  <br>
                   <div class="button button-md">A Medium Button</div>
+                  <br>
                   <div class="button button-lg">A Large Button</div>
                 </div>
                 <label for="slide-3" class="carousel__left"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
@@ -324,7 +387,24 @@
               </div>
               <div class="slide slide--4">
                 <div class="slide__frame">
-                  <img src="images/form-3.jpg" class="img-responsive">
+                  <div class="f4-container">
+                    <form class="f4-form">
+                      <div class="field-top">
+                        <label class="f4-label">Username</label>
+                        <input type="text" class="f4-write username">
+                        <label class="f4-label">Password</label>
+                        <input type="password" class="f4-write password">
+                        <div class="f4-store-info">
+                          <input type="checkbox" class="f4-check" checked="true">
+                          <label class="f4-label-check">Remember me</label>
+                        </div>
+                      </div>
+                      <div class="clear"></div>
+                      <div class="field-bottom">
+                        <input type="submit" value="Sign in &nbsp; &rarr;" class="f4-submit">
+                      </div>
+                    </form>
+                  </div>
                 </div>
                 <label for="slide-3-b" class="carousel__left"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
                 <label for="slide-1-b" class="carousel__right"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
@@ -403,7 +483,17 @@
               </div>
               <div class="slide slide--4">
                 <div class="slide__frame">
-                  <img src="images/questionnaire-3.jpg" class="img-responsive">
+                  <form class="questionnaire" id="questionnaireForm" novalidate>
+                    <section class="questionnaire-card">
+                      <h1 class="title main"><strong>Questionnaire</strong> Mockup</h1>
+                      <label class="question required">What are your first and last names?</label>
+                      <input tabindex="1" type="text" class="short-answer user-answer" placeholder="John Wayne" id="name" required>
+                      <span id="hName" class="hint"></span>
+                      <label class="question required">What is your email address?</label>
+                      <input tabindex="2" type="text" class="short-answer user-answer" placeholder="whatsup@moderndeveloper.com" id="email" required>
+                      <span id="hEmail" class="hint"></span>
+                    </section>
+                  </form>
                 </div>
                 <label for="slide-3-c" class="carousel__left"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
                 <label for="slide-1-c" class="carousel__right"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
@@ -480,7 +570,41 @@
               </div>
               <div class="slide slide--4">
                 <div class="slide__frame">
-                  <img src="images/imggal-3.jpg" class="img-responsive">
+                  <input type="radio" name="img" id="toggle-img-1" checked>
+                  <input type="radio" name="img" id="toggle-img-2">
+                  <input type="radio" name="img" id="toggle-img-3">
+                  <input type="radio" name="img" id="toggle-img-4">
+                  <input type="radio" name="img" id="toggle-img-5">
+
+                  <div class="thumbnails">
+                    <div class="thumb thumb--1">
+                      <label for="toggle-img-1">
+                        <img src="https://static.pexels.com/photos/24353/pexels-photo.jpg" alt="image 1" width="150" height="100">
+                      </label>
+                    </div>
+                    <div class="thumb thumb--2">
+                      <label for="toggle-img-2">
+                        <img src="https://static.pexels.com/photos/2394/lights-clouds-dark-car.jpg" alt="image 2" width="150" height="100">
+                      </label>
+                    </div>
+                    <div class="thumb thumb--3">
+                      <label for="toggle-img-3">
+                        <img src="https://static.pexels.com/photos/26796/pexels-photo.jpg" alt="image 3" width="150" height="100">
+                      </label>
+                    </div>
+                    <div class="thumb thumb--4">
+                      <label for="toggle-img-4">
+                        <img src="https://static.pexels.com/photos/2394/lights-clouds-dark-car.jpg" alt="image 4" width="150" height="100">
+                      </label>
+                    </div>
+                    <div class="thumb thumb--5">
+                      <label for="toggle-img-5">
+                        <img src="https://static.pexels.com/photos/116675/pexels-photo-116675.jpeg" alt="image 4" width="150" height="100">
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="img-container"></div>
                 </div>
                 <label for="slide-3-d" class="carousel__left"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
                 <label for="slide-1-d" class="carousel__right"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>
@@ -556,7 +680,24 @@
               </div>
               <div class="slide slide--4">
                 <div class="slide__frame">
-                  <img src="images/product-3.jpg" class="img-responsive">
+                  <div class="product-listing">
+                    <div class="card">
+                      <div class="product" id="pcg01">
+                        <div class="product-info">
+                          <h2 class="product-title">Overwatch</h2>
+                          <div class="product-img">
+                            <img src="../web_components/images/overwatch.jpg" alt="Overwatch" class="img-responsive">
+                          </div>
+                          <p class="product-description">Overwatch is an upcoming multiplayer first-person shooter in development by Blizzard Entertainment.</p>
+                        </div>
+                        <div class="product-footer">
+                          <div class="unit-price">79</div>
+                          <a href="#" class="add-to-cart" data-product="pcg01">Add to Cart</a>
+                          <input type="number" min="1" value="1" class="unit-qty">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <label for="slide-3-e" class="carousel__left"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></label>
                 <label for="slide-1-e" class="carousel__right"><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></label>

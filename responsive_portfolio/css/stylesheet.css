@@ -381,7 +381,7 @@ input[type="checkbox"]#modalToggle:checked ~ label .overlay {
   color: #1b1b1b;
 }
 
-.showcase input[type="radio"]:checked + label {
+.showcase > input[type="radio"]:checked + label {
   background: #1b1b1b;
   color: #fff;
   border: 1px solid #1b1b1b;

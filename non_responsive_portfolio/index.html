@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Joseph Cha's Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto,300|Roboto+Slab:300,400" rel="stylesheet">
+  </head>
+  <body class="toggle">
+
+    <input type="checkbox" id="modalToggle">
+
+    <nav class="navigation">
+      <div class="container">
+        <div class="site-title">Joseph Cha</div>
+        <ul class="primary-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="navigation__search">
+          <input type="text" class="navigation__search__bar" required>
+          <label class="navigation__search__label">Search</label>
+          <div class="navigation__search__submit">
+            <label for="modalToggle">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </label>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="main-body">
+      <div class="modal">
+        <div class="modal__box">
+          <h1 class="h1 h1--modal brand-1">Search Temporarily Disabled</h1>
+          <label for="modalToggle">
+            <i class="modal--close fa fa-times fa-2x" aria-hidden="true"></i>
+          </label>
+        </div>
+      </div>
+      <div class="container">
+        <section class="section"  id="about">
+          <h1 class="h1">About</h1>
+          <p class="h1__info">Hi there! Welcome to my portfolio, my name is Joseph and I'm an aspiring Frontend Developer in Sydney, Australia.</p>
+        </section>
+
+        <section class="section" id="projects">
+          <h1 class="h1 h1--projects">Projects</h1>
+          <p class="h1__info h1__info--projects">Check out some of the cool things I've built during my time at Modern Developer. Don't forget to check out the live demo!</p>
+        </section>
+
+        <section class="showcase">
+          <input type="radio" name="tab" id="one" checked>
+          <input type="radio" name="tab" id="two">
+          <input type="radio" name="tab" id="three">
+          <input type="radio" name="tab" id="four">
+          <input type="radio" name="tab" id="five">
+          <div class="tabs">
+            <label class="tab__label" for="one">Buttons</label>
+            <label class="tab__label" for="two">Forms</label>
+            <label class="tab__label" for="three">Questionnaire</label>
+            <label class="tab__label" for="four">Image Gallery</label>
+            <label class="tab__label" for="five">Product Listing</label>
+          </div>
+          <div class="tab_contents">
+            <div class="tab__content tab--one">
+              <div class="carousel">
+                <input type="radio" name="slide" id="slide-1" checked>
+                <input type="radio" name="slide" id="slide-2">
+                <input type="radio" name="slide" id="slide-3">
+
+                <div class="slide slide--1">
+                  <div class="slide__frame">
+                    <img src="http://3.1m.yt/jKG-Qb3.jpg" class="img-responsive">
+                  </div>
+                  <label for="slide-3" class="carousel__left"><i class="fa fa-chevron-left" aria-hidden="true"></i></label>
+                  <label for="slide-2" class="carousel__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                  <div class="carousel__indicators">
+                    <label for="slide-1"><div class="carousel__indicator"></div></label>
+                    <label for="slide-2"><div class="carousel__indicator"></div></label>
+                    <label for="slide-3"><div class="carousel__indicator"></div></label>
+                  </div>
+                </div>
+
+                <div class="slide slide--2">
+                  <div class="slide__frame">
+                    <img src="http://3.1m.yt/WsFTtN.jpg" class="img-responsive">
+                  </div>
+                  <label for="slide-1" class="carousel__left"><i class="fa fa-chevron-left" aria-hidden="true"></i></label>
+                  <label for="slide-3" class="carousel__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                  <div class="carousel__indicators">
+                    <label for="slide-1"><div class="carousel__indicator"></div></label>
+                    <label for="slide-2"><div class="carousel__indicator"></div></label>
+                    <label for="slide-3"><div class="carousel__indicator"></div></label>
+                  </div>
+                </div>
+
+                <div class="slide slide--3">
+                  <div class="slide__frame">
+                    <img src="http://3.1m.yt/rziWuUx.jpg" class="img-responsive">
+                  </div>
+                  <label for="slide-2" class="carousel__left"><i class="fa fa-chevron-left" aria-hidden="true"></i></label>
+                  <label for="slide-1" class="carousel__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                  <div class="carousel__indicators">
+                    <label for="slide-1"><div class="carousel__indicator"></div></label>
+                    <label for="slide-2"><div class="carousel__indicator"></div></label>
+                    <label for="slide-3"><div class="carousel__indicator"></div></label>
+                  </div>
+                </div>
+
+                <div class="slide__info">
+                  <p><strong>Technologies:</strong> HTML5, CSS3, and Vanilla JavaScript</p>
+                  <p>Simple buttons created using CSS. Created for web components library in the Introduction to CSS chapter.</p>
+                  <ul class="project-links">
+                    <li>
+                      <a href="http://js-cha.github.io/buttons.html" target="_blank"><i class="fa fa-link" aria-hidden="true"></i> View Demo</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/js-cha/learning-web-components/tree/master/components/buttons"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab__content tab--two">
+              <div class="carousel">
+                <input type="radio" name="slide-b" id="slide-1-b" checked>
+                <input type="radio" name="slide-b" id="slide-2-b">
+                <input type="radio" name="slide-b" id="slide-3-b">
+
+                <div class="slide slide--1">
+                  <div class="slide__frame">
+                    <img src="http://3.1m.yt/-KRrxyc.jpg" class="img-responsive">
+                  </div>
+                  <label for="slide-3-b" class="carousel__left"><i class="fa fa-chevron-left" aria-hidden="true"></i></label>
+                  <label for="slide-2-b" class="carousel__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                  <div class="carousel__indicators">
+                    <label for="slide-1-b"><div class="carousel__indicator"></div></label>
+                    <label for="slide-2-b"><div class="carousel__indicator"></div></label>
+                    <label for="slide-3-b"><div class="carousel__indicator"></div></label>
+                  </div>
+                </div>
+
+                <div class="slide slide--2">
+                  <div class="slide__frame">
+                    <img src="http://3.1m.yt/24P3tof.jpg" class="img-responsive">
+                  </div>
+                  <label for="slide-1-b" class="carousel__left"><i class="fa fa-chevron-left" aria-hidden="true"></i></label>
+                  <label for="slide-3-b" class="carousel__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                  <div class="carousel__indicators">
+                    <label for="slide-1-b"><div class="carousel__indicator"></div></label>
+                    <label for="slide-2-b"><div class="carousel__indicator"></div></label>
+                    <label for="slide-3-b"><div class="carousel__indicator"></div></label>
+                  </div>
+                </div>
+
+                <div class="slide slide--3">
+                  <div class="slide__frame">
+                    <img src="http://3.1m.yt/y8k3Ogj.jpg" class="img-responsive">
+                  </div>
+                  <label for="slide-2-b" class="carousel__left"><i class="fa fa-chevron-left" aria-hidden="true"></i></label>
+                  <label for="slide-1-b" class="carousel__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                  <div class="carousel__indicators">
+                    <label for="slide-1-b"><div class="carousel__indicator"></div></label>
+                    <label for="slide-2-b"><div class="carousel__indicator"></div></label>
+                    <label for="slide-3-b"><div class="carousel__indicator"></div></label>
+                  </div>
+                </div>
+
+                <div class="slide__info">
+                  <p><strong>Technologies:</strong> HTML5, CSS3, and Vanilla JavaScript</p>
+                  <p>Various forms created for our multi-page site. Created during the Introduction to CSS chapter.</p>
+                  <ul class="project-links">
+                    <li>
+                      <a href="http://js-cha.github.io/forms.html" target="_blank"><i class="fa fa-link" aria-hidden="true"></i> View Demo</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/js-cha/learning-web-components/tree/master/components/forms"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab__content tab--three">
+              <div class="carousel">
+                <input type="radio" name="slide-c" id="slide-1-c" checked>
+                <input type="radio" name="slide-c" id="slide-2-c">
+                <input type="radio" name="slide-c" id="slide-3-c">
+
+                <div class="slide slide--1">
+                  <div class="slide__frame">
+                    <img src="http://3.1m.yt/QOoTNTB.jpg" class="img-responsive">
+                  </div>
+                  <label for="slide-3-c" class="carousel__left"><i class="fa fa-chevron-left" aria-hidden="true"></i></label>
+                  <label for="slide-2-c" class="carousel__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                  <div class="carousel__indicators mt-40">
+                    <label for="slide-1-c"><div class="carousel__indicator"></div></label>
+                    <label for="slide-2-c"><div class="carousel__indicator"></div></label>
+                    <label for="slide-3-c"><div class="carousel__indicator"></div></label>
+                  </div>
+                </div>
+
+                <div class="slide slide--2">
+                  <div class="slide__frame">
+                    <img src="http://3.1m.yt/M_0BfcP.jpg" class="img-responsive">
+                  </div>
+                  <label for="slide-1-c" class="carousel__left"><i class="fa fa-chevron-left" aria-hidden="true"></i></label>
+                  <label for="slide-3-c" class="carousel__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                  <div class="carousel__indicators mt-40">
+                    <label for="slide-1-c"><div class="carousel__indicator"></div></label>
+                    <label for="slide-2-c"><div class="carousel__indicator"></div></label>
+                    <label for="slide-3-c"><div class="carousel__indicator"></div></label>
+                  </div>
+                </div>
+
+                <div class="slide slide--3">
+                  <div class="slide__frame">
+                    <img src="http://3.1m.yt/ClwCFF_.jpg" class="img-responsive">
+                  </div>
+                  <label for="slide-2-c" class="carousel__left"><i class="fa fa-chevron-left" aria-hidden="true"></i></label>
+                  <label for="slide-1-c" class="carousel__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                  <div class="carousel__indicators mt-40">
+                    <label for="slide-1-c"><div class="carousel__indicator"></div></label>
+                    <label for="slide-2-c"><div class="carousel__indicator"></div></label>
+                    <label for="slide-3-c"><div class="carousel__indicator"></div></label>
+                  </div>
+                </div>
+
+                <div class="slide__info">
+                  <p><strong>Technologies:</strong> HTML5, CSS3, and Vanilla JavaScript</p>
+                  <p>Questionnaire mockup created for the end of chapter team project. Created during the Introduction to CSS chapter.</p>
+                  <p>Collaborator: Maurizio Federici</p>
+                  <ul class="project-links">
+                    <!-- <li>
+                      <a href="http://js-cha.github.io/buttons.html" target="_blank"><i class="fa fa-link" aria-hidden="true"></i> View Demo</a>
+                    </li> -->
+                    <li>
+                      <a href="https://github.com/mauriziofederici/well-groomed-mara-HTML-CSS"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab__content tab--four">
+              <div class="carousel">
+                <input type="radio" name="slide-d" id="slide-1-d" checked>
+                <input type="radio" name="slide-d" id="slide-2-d">
+                <input type="radio" name="slide-d" id="slide-3-d">
+
+                <div class="slide slide--1">
+                  <div class="slide__frame">
+                    <img src="http://1.1m.yt/2u5bcAI.jpg" class="img-responsive">
+                  </div>
+                  <label for="slide-3-d" class="carousel__left"><i class="fa fa-chevron-left" aria-hidden="true"></i></label>
+                  <label for="slide-2-d" class="carousel__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                  <div class="carousel__indicators mt-40">
+                    <label for="slide-1-d"><div class="carousel__indicator"></div></label>
+                    <label for="slide-2-d"><div class="carousel__indicator"></div></label>
+                    <label for="slide-3-d"><div class="carousel__indicator"></div></label>
+                  </div>
+                </div>
+
+                <div class="slide slide--2">
+                  <div class="slide__frame">
+                    <img src="http://1.1m.yt/2ywQ57F.jpg" class="img-responsive">
+                  </div>
+                  <label for="slide-1-d" class="carousel__left"><i class="fa fa-chevron-left" aria-hidden="true"></i></label>
+                  <label for="slide-3-d" class="carousel__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                  <div class="carousel__indicators mt-40">
+                    <label for="slide-1-d"><div class="carousel__indicator"></div></label>
+                    <label for="slide-2-d"><div class="carousel__indicator"></div></label>
+                    <label for="slide-3-d"><div class="carousel__indicator"></div></label>
+                  </div>
+                </div>
+
+                <div class="slide slide--3">
+                  <div class="slide__frame">
+                    <img src="http://1.1m.yt/-9Lrim_.jpg" class="img-responsive">
+                  </div>
+                  <label for="slide-2-d" class="carousel__left"><i class="fa fa-chevron-left" aria-hidden="true"></i></label>
+                  <label for="slide-1-d" class="carousel__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                  <div class="carousel__indicators mt-40">
+                    <label for="slide-1-d"><div class="carousel__indicator"></div></label>
+                    <label for="slide-2-d"><div class="carousel__indicator"></div></label>
+                    <label for="slide-3-d"><div class="carousel__indicator"></div></label>
+                  </div>
+                </div>
+
+                <div class="slide__info">
+                  <p><strong>Technologies:</strong> HTML5, CSS3, and Vanilla JavaScript</p>
+                  <p>Image gallery carousel using only HTML and CSS.</p>
+                  <ul class="project-links">
+                    <li>
+                      <a href="https://codepen.io/unionbank/pen/BLaAkg" target="_blank"><i class="fa fa-link" aria-hidden="true"></i> View Demo</a>
+                    </li>
+                    <!-- <li>
+                      <a href="https://github.com/js-cha/learning-web-components/tree/master/components/buttons"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab__content tab--five">
+              <div class="carousel">
+                <input type="radio" name="slide-e" id="slide-1-e" checked>
+                <input type="radio" name="slide-e" id="slide-2-e">
+                <input type="radio" name="slide-e" id="slide-3-e">
+
+                <div class="slide slide--1">
+                  <div class="slide__frame">
+                    <img src="http://4.1m.yt/I7u9yFW.jpg" class="img-responsive">
+                  </div>
+                  <label for="slide-3-e" class="carousel__left"><i class="fa fa-chevron-left" aria-hidden="true"></i></label>
+                  <label for="slide-2-e" class="carousel__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                  <div class="carousel__indicators mt-40">
+                    <label for="slide-1-e"><div class="carousel__indicator"></div></label>
+                    <label for="slide-2-e"><div class="carousel__indicator"></div></label>
+                    <label for="slide-3-e"><div class="carousel__indicator"></div></label>
+                  </div>
+                </div>
+
+                <div class="slide slide--2">
+                  <div class="slide__frame">
+                    <img src="http://1.1m.yt/BIimhxR.jpg" class="img-responsive">
+                  </div>
+                  <label for="slide-1-e" class="carousel__left"><i class="fa fa-chevron-left" aria-hidden="true"></i></label>
+                  <label for="slide-3-e" class="carousel__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                  <div class="carousel__indicators mt-40">
+                    <label for="slide-1-e"><div class="carousel__indicator"></div></label>
+                    <label for="slide-2-e"><div class="carousel__indicator"></div></label>
+                    <label for="slide-3-e"><div class="carousel__indicator"></div></label>
+                  </div>
+                </div>
+
+                <div class="slide slide--3">
+                  <div class="slide__frame">
+                    <img src="http://1.1m.yt/EWeyMHt.jpg" class="img-responsive">
+                  </div>
+                  <label for="slide-2-e" class="carousel__left"><i class="fa fa-chevron-left" aria-hidden="true"></i></label>
+                  <label for="slide-1-e" class="carousel__right"><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+                  <div class="carousel__indicators mt-40">
+                    <label for="slide-1-e"><div class="carousel__indicator"></div></label>
+                    <label for="slide-2-e"><div class="carousel__indicator"></div></label>
+                    <label for="slide-3-e"><div class="carousel__indicator"></div></label>
+                  </div>
+                </div>
+
+                <div class="slide__info">
+                  <p><strong>Technologies:</strong> HTML5, CSS3, and Vanilla JavaScript</p>
+                  <p>Product listing page project assignment created during the Introduction to the DOM chapter. Live demo allows you to add and remove carts as well as apply promo codes!</p>
+                  <ul class="project-links">
+                    <li>
+                      <a href="http://js-cha.github.io/product.html" target="_blank"><i class="fa fa-link" aria-hidden="true"></i> View Demo</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/js-cha/learning-web-components/tree/master/components/product_listing"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="clear"></div>
+
+        <section class="section" id="skills">
+          <h1 class="h1 h1--projects">Skills</h1>
+          <p class="h1__info h1__info--projects">My skills are mainly in Frontend Development but I would like to learn Backend Development in the future.</p>
+          <div class="container--box">
+            <div class="graphs">
+              <div class="ratio-bar">
+                <div class="percent seventy">70%</div>
+                <div class="percent thirty">30%</div>
+              </div>
+              <div class="graph__y-axis">
+                <ul>
+                  <li>Expert</li>
+                  <li>Proficient</li>
+                  <li>Competent</li>
+                  <li>Learning</li>
+                </ul>
+              </div>
+              <div class="horizontal-bar-graphs">
+                <div class="graph">
+                  <div class="graph__title brand-2">Frontend Development</div>
+                  <ul class="graph__bars">
+                    <li>
+                      <div class="bar y-3 brand-1-bg"></div>
+                      <span class="tooltip">Aiming for JS ninja!</span>
+                      <div class="x-axis">JavaScript</div>
+                    </li>
+                    <li>
+                      <div class="bar y-4 brand-2-bg"></div>
+                      <span class="tooltip">I'll try stay humble.</span>
+                      <div class="x-axis">HTML/CSS</div>
+                    </li>
+                    <li>
+                      <div class="bar y-1 brand-3-bg"></div>
+                      <span class="tooltip">Not quite there yet.</span>
+                      <div class="x-axis">ReactJS</div>
+                    </li>
+                    <li>
+                      <div class="bar y-1 brand-4-bg"></div>
+                      <span class="tooltip">Maybe one day.</span>
+                      <div class="x-axis">Angular</div>
+                    </li>
+                    <li>
+                      <div class="bar y-2 brand-5-bg"></div>
+                      <span class="tooltip">Need to learn more!</span>
+                      <div class="x-axis">jQuery</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="graph">
+                  <div class="graph__title brand-1">Backend Development</div>
+                  <ul class="graph__bars">
+                    <li>
+                      <div class="bar y-1 brand-1-bg"></div>
+                      <span class="tooltip">Maybe one day.</span>
+                      <div class="x-axis">MySQL</div>
+                    </li>
+                    <li>
+                      <div class="bar y-3 brand-2-bg"></div>
+                      <span class="tooltip">Maybe one day.</span>
+                      <div class="x-axis">Postgres</div>
+                    </li>
+                    <li>
+                      <div class="bar y-2 brand-3-bg"></div>
+                      <span class="tooltip">Maybe one day.</span>
+                      <div class="x-axis">Mongo</div>
+                    </li>
+                    <li>
+                      <div class="bar y-4 brand-4-bg"></div>
+                      <span class="tooltip">Maybe one day.</span>
+                      <div class="x-axis">NodeJS</div>
+                    </li>
+                    <li>
+                      <div class="bar y-1 brand-5-bg"></div>
+                      <span class="tooltip">Maybe one day.</span>
+                      <div class="x-axis">PHP</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="graph">
+                  <div class="graph__title">Other Skills</div>
+                  <ul class="graph__bars">
+                    <li>
+                      <div class="bar y-3 brand-6-bg"></div>
+                      <span class="tooltip">It's getting there.</span>
+                      <div class="x-axis">Written Communication</div>
+                    </li>
+                    <li>
+                      <div class="bar y-4 brand-7-bg"></div>
+                      <span class="tooltip">I like problem-solving!</span>
+                      <div class="x-axis">Problem-Solving</div>
+                    </li>
+                    <li>
+                      <div class="bar y-2 brand-8-bg"></div>
+                      <span class="tooltip">Delegate, delegate!</span>
+                      <div class="x-axis">Project-Management</div>
+                    </li>
+                    <li>
+                      <div class="bar y-4 brand-9-bg"></div>
+                      <span class="tooltip">Researching is fun!</span>
+                      <div class="x-axis">Research</div>
+                    </li>
+                    <li>
+                      <div class="bar y-1 brand-10-bg"></div>
+                      <span class="tooltip">I hate it.</span>
+                      <div class="x-axis">Public Speaking</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="clear"></div>
+
+        <section class="section" id="contact">
+          <h1 class="h1 h1--projects">Contact</h1>
+          <p class="h1__info h1__info--projects">Let's get in touch! Please don't hesistate to contact me.</p>
+          <div class="contact-card">
+            <div class="contact-card--center">
+              <div class="contact-card__box cc--left">
+                <div class="contact__name">Joseph Cha</div>
+                <div class="contact__occupation">Modern Frontend Developer</div>
+                <ul class="contact__links">
+                  <li><a href="http://encyclopedia.moderndeveloper.com/"><img src="http://4.1m.yt/i7lEcDq.png" alt="Encyclopedia" width="38"></a></li>
+                  <li><a href="https://github.com/js-cha" target="_blank"><img src="http://4.1m.yt/EgCF1Qz.png" alt="GitHub"></a></li>
+                  <li><a href="https://www.linkedin.com/in/joseph-cha-0420bb62"><img src="http://4.1m.yt/6tg5IC.png" alt="LinkedIn"></a></li>
+                  <li>josephcha4@gmail.com</li>
+                </ul>
+              </div>
+              <div class="contact-card__box cc--right">
+                <p class="contact__info">Joseph Cha is an award-winning nobody who hasn't built anything noteworthy of mention but hopes to change that one day. Stay tuned!</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <div class="clear"></div>
+
+    <footer>
+      <p>&copy; 2016 Joseph Cha</p>
+    </footer>
+
+    <script src="https://use.fontawesome.com/5f5c90a2b4.js"></script>
+	</body>
+</html>

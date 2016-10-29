@@ -46,8 +46,8 @@
     min-height: 544px;
   }
   
-  .showcase input[type="radio"]#five:checked ~ .pushDown {
-    margin-bottom: 150px;
+  .showcase > input[type="radio"]#five:checked ~ .pushDown {
+    margin-bottom: 250px;
   }
   
   .modal__msg::before {
@@ -90,6 +90,10 @@
     width: 75%;
     margin-left: 5%;
   }
+
+  .slide__frame {
+    width: 90%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -124,5 +128,8 @@
 
   .carousel__right {
     right: 0;
+  }
+  .modal__msg::before {
+    content: "Device width: < 480px";
   }
 }
