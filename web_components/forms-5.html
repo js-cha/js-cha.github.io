@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multi Page Website</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="css/forms.css">
+  </head>
+  <body>
+    <div class="hero">
+      <div class="container">
+        <div class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="buttons.html">Buttons</a></li>
+            <li><a href="profile.html">Profile Card</a></li>
+            <li><a href="forms.html">Forms</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="product.html">Product Listing</a></li>
+          </ul>
+        </div>
+        <h1 class="main-heading showcase-heading">Project Assignment 4: Forms</h1>
+        <div class="showcase">
+          <div class="nav">
+            <ul>
+              <li><a href="forms.html">Signup</a></li>
+              <li><a href="forms-2.html">Search</a></li>
+              <li><a href="forms-3.html">Questionnaire</a></li>
+              <li><a href="forms-4.html">Login</a></li>
+              <li><a href="forms-5.html">Color Building</a></li>
+              <li><a href="forms-6.html">Shipping/Billing</a></li>
+              <li><a href="forms-7.html">Scheduling</a></li>
+              <li><a href="forms-8.html">Credit Card</a></li>
+            </ul>
+          </div>
+        <h2 class="main-subheading">Color Building Form</h2>
+        <div class="f5-container">
+          <div class="f5-form">
+            <div class="range">
+              <label class="f5-label range-red">Red</label>
+              <input type="range" min="0" max="255" step="5" name="red" class="f5-range">
+            </div>
+            <div class="range">
+              <label class="f5-label range-green">Green</label>
+              <input type="range" min="0" max="255" step="5" name="green" class="f5-range">
+            </div>
+            <div class="range">
+              <label class="f5-label range-blue">Blue</label>
+              <input type="range" min="0" max="255" step="5" name="blue" class="f5-range">
+            </div>
+            <div class="range">
+              <label class="f5-label range-alpha">Alpha</label>
+              <input type="range" min="0" max="1" step="0.01" name="alpha" class="f5-range">
+            </div>
+            <input class="f5-write" type="text" value="RGBA">
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/validator.js"></script>
+    <script>
+      var form5 = document.querySelector(".f5-form"),
+          range = document.querySelector(".f5-range");
+
+    </script>
+  </body>
+</html>

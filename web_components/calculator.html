@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multi Page Website</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="css/calculator.css">
+  </head>
+  <body>
+    <div class="hero">
+      <div class="container">
+        <div class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="buttons.html">Buttons</a></li>
+            <li><a href="profile.html">Profile Card</a></li>
+            <li><a href="forms.html">Forms</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="product.html">Product Listing</a></li>
+          </ul>
+        </div>
+        <h1 class="main-heading showcase-heading">Project Assignment 5: Calculator</h1>
+        <div class="showcase">
+          <div class="calculator">
+            <div class="row">
+              <input type="text" class="screen" value="" placeholder="0" readonly>
+            </div>
+            <div class="row">
+              <div class="block num"><div class="node">7</div></div>
+              <div class="block num"><div class="node">8</div></div>
+              <div class="block num"><div class="node">9</div></div>
+              <div class="block operation plus"><div class="node">+</div></div>
+            </div>
+            <div class="row">
+              <div class="block num"><div class="node">4</div></div>
+              <div class="block num"><div class="node">5</div></div>
+              <div class="block num"><div class="node">6</div></div>
+              <div class="block operation minus"><div class="node">-</div></div>
+            </div>
+            <div class="row">
+              <div class="block num"><div class="node">1</div></div>
+              <div class="block num"><div class="node">2</div></div>
+              <div class="block num"><div class="node">3</div></div>
+              <div class="block operation divide"><div class="node">/</div></div>
+            </div>
+            <div class="row">
+              <div class="block num"><div class="node">0</div></div>
+              <div class="block num"><div class="node">.</div></div>
+              <div class="block equals"><div class="node">=</div></div>
+              <div class="block operation multiply"><div class="node">*</div></div>
+            </div>
+            <div class="row">
+              <div class="block block-50 clear"><div class="node">C</div></div>
+              <div class="block block-50 del"><div class="node">DEL</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+
+    <script src="js/calculator.js"></script>
+    <script>
+      window.onload = calculate();
+    </script>
+  </body>
+</html>

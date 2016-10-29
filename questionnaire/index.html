@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+    <link href='css/media_query_josephcha.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <form class="questionnaire" id="questionnaireForm" novalidate>
+      <section class="questionnaire-card">
+        <h1 class="title main"><strong>Questionnaire</strong> Mockup</h1>
+        <label class="question required">What are your first and last names?</label>
+        <input tabindex="1" type="text" class="short-answer user-answer" placeholder="John Wayne" id="name" required>
+        <span id="hName" class="hint"></span>
+        <label class="question required">What is your email address?</label>
+        <input tabindex="2" type="text" class="short-answer user-answer" placeholder="whatsup@moderndeveloper.com" id="email" required>
+        <span id="hEmail" class="hint"></span>
+        <label class="question">What is your favorite color?</label>
+        <input tabindex="3" type="text" class="short-answer user-answer">
+        <button class="button" tabindex="4" id="sectionOneBtn">Continue</button>
+      </section>
+      <section class="questionnaire-card">
+        <h1 class="title">Section Title</h1>
+        <label class="question">Question</label>
+        <input tabindex="5" type="text" class="short-answer user-answer" placeholder="Answer">
+        <label class="question">Question</label>
+        <input tabindex="6" type="text" class="short-answer user-answer" placeholder="Answer">
+        <label class="question">Question</label>
+        <textarea tabindex="7" class="long-answer user-answer" cols="10" placeholder="Long Answer using textarea"></textarea>
+        <button tabindex="8" class="button" id="sectionTwoBtn">Continue</button>
+      </section>
+      <section class="questionnaire-card disabled">
+        <h1 class="title">This Section is disabled</h1>
+        <label class="question">Question</label>
+        <input type="text" class="short-answer user-answer" placeholder="Answer">
+        <button class="button" id="sectionThreeBtn">Continue</button>
+      </section>
+      <section class="questionnaire-card">
+        <h1 class="title"><strong>Strong</strong> Section Title</h1>
+        <p class="description">Description Paragraph.</p>
+        <img src="img/kitty.jpg" alt="Kitty" class="questionnaire-img img-responsive">
+        <label class="question">Question</label>
+        <p class="description">Description Paragraph.</p>
+        <input tabindex="9" type="text" class="short-answer user-answer" placeholder="Answer">
+        <label class="question">Question</label>
+        <textarea tabindex="10" class="long-answer user-answer" cols="10" placeholder="Long Answer using textarea"></textarea>
+        <button tabindex="11" class="button" id="sectionFourBtn">Continue</button>
+      </section>
+      <section class="questionnaire-card">
+        <h1 class="title">Section Title w/ form elements</h1>
+        <p class="description">Description Paragraph.</p>
+        <div class="input-group">
+          <label class="question">Multiple Choice w/ Radio Inputs</label>
+          <span id="hRadio" class="hint"></span>
+          <label for="radio-item-1" class="multiple-choice">
+            <input tabindex="12" type="radio" id="radio-item-1" name="radio-item" value="something">I like option A
+          </label>
+          <label for="radio-item-2" class="multiple-choice">
+            <input tabindex="13" type="radio" id="radio-item-2" name="radio-item" value="something">I like option B
+          </label>
+          <label for="radio-item-3" class="multiple-choice">
+            <input tabindex="14" type="radio" id="radio-item-3" name="radio-item" value="something">I like option C
+          </label>
+        </div>
+        <div class="input-group">
+          <label class="question">Multiple Choice w/ Checkbox Inputs</label>
+          <span id="hCheckbox" class="hint"></span>
+          <label for="check-item-1" class="multiple-choice">
+            <input tabindex="15" type="checkbox" id="check-item-1" name="check-item" value="something">I like option A
+          </label>
+          <label for="check-item-2" class="multiple-choice">
+            <input tabindex="16" type="checkbox" id="check-item-2" name="check-item" value="something">I like option B
+          </label>
+          <label for="check-item-3" class="multiple-choice">
+            <input tabindex="17" type="checkbox" id="check-item-3" name="check-item" value="something">I like option C
+          </label>
+        </div>
+        <label class="question required">Dropdown Select from the list below:</label>
+        <p class="description">Description Paragraph.</p>
+        <select tabindex="18" class="dropdown" required>
+          <option value="blank">Select an option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+        <span id="hMenu" class="hint"></span>
+        <input type="submit" tabindex="21" class="submit" value="Submit" id="submitBtn">
+      </section>
+    </form>
+    <script src="js/utils.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

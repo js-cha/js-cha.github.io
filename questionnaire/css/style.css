@@ -1,0 +1,172 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Roboto", Helvetica, sans-serif;
+  background: url('../img/dragon.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+
+.questionnaire .questionnaire-card {
+  max-width: 840px;
+  margin: 150px auto;
+  padding: 35px 105px 60px 105px;
+  background-color: #fafafa;
+  border-radius: 3px;
+  position: relative;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.questionnaire .title {
+  font-size: 2.375rem;
+  font-weight: 300;
+  color: #5a35a7;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.questionnaire .title.main {
+  font-size: 2.875em;
+}
+
+.questionnaire .question {
+  display: block;
+  max-width: 100%;
+  margin: 20px 0 10px 0;
+  font-size: 1.375em;
+  font-weight: 600;
+  color: #183547;
+}
+
+.questionnaire .description {
+  font-size: 1.125em;
+  color: #7e7c7e;
+}
+
+.questionnaire .long-answer,
+.questionnaire .short-answer {
+  width: 100%;
+  margin: 10px 0 30px 0;
+  padding: 9px;
+  border:none;
+  border-bottom: 4px solid #5a35a7;
+  background-color: white;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.438em;
+  color: #0f1314;
+  cursor: text;
+}
+
+.questionnaire .long-answer {
+  height: 150px;
+}
+
+.questionnaire .multiple-choice {
+  display: block;
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #183547;
+}
+
+.questionnaire .input-group input[type="radio"],
+.questionnaire .input-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.questionnaire .input-group {
+  margin: 50px 0;
+}
+
+.questionnaire .dropdown {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 3px;
+  background-color: white;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+
+.questionnaire .button,
+.questionnaire .submit {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px 83px;
+  border: none;
+  font-size: 1.125em;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.questionnaire .button {
+  background-color: #8f5fcf;
+  border: 1px solid #6d4aae;
+}
+
+.questionnaire .submit {
+  margin-top: 40px;
+  background-color: #aa3377;
+  border: 1px solid #882659;
+}
+
+.questionnaire .button:hover,
+.questionnaire .button:focus {
+  background-color: #482b88;
+}
+
+.questionnaire .submit:hover,
+.questionnaire .submit:focus {
+  background-color: #a2116d;
+}
+
+.questionnaire .required::after {
+  content: "required";
+  float: right;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #b90141;
+  position: relative;
+  top: 5px;
+}
+
+.questionnaire .disabled::before {
+  content: "";
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.questionnaire .questionnaire-img {
+  margin: 40px 0;
+}
+
+.questionnaire .img-responsive {
+  display: block;
+  max-width: 100%;
+}
+
+.invalid {
+  border-bottom-color: #b92758 !important;
+}
+
+.hint {
+  padding: 0px;
+  text-align: left;
+  color: #b90141;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,34 @@
+/* Media Queries */
+
+@media (max-width: 600px ){
+  .questionnaire {
+    padding: 0 20px;
+  }
+  .questionnaire .questionnaire-card {
+    padding: 35px 55px 60px 55px;
+    margin: 50px auto;
+  }
+  .questionnaire .title.main {
+    font-size: 1.875em;
+  }
+  .questionnaire .long-answer,
+  .questionnaire .short-answer,
+  .questionnaire .question {
+    font-size: 1em;
+  }
+  .questionnaire .required::after {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .questionnaire .questionnaire-card {
+    padding: 35px 25px 60px 25px;
+  }
+  .questionnaire .required::after {
+    content: '*';
+  }
+  .questionnaire .button {
+    width: 100%;
+  }
+}

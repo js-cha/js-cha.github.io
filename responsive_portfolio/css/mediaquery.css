@@ -1,0 +1,128 @@
+@media (min-width: 481px) {
+  .navMobile,
+  .navMobileIcon {
+    display: none;
+  }
+
+  .nav__logo h1 {
+    display: block;
+  }
+
+  .nav__primaryNav {
+    display: block;
+  }
+
+  .nav__search {
+    margin-top: 15px;
+  }
+
+  .nav--left {
+    width: 70%;
+  }
+
+  .nav--right {
+    width: 30%;
+  }
+
+  .modal__msg::before {
+    content: "Device width: 480px - 768px";
+  }
+}
+
+@media (min-width: 769px) {
+  .tabItem {
+    width: 25%;
+    margin-bottom: 10px;
+  }
+
+  .tabContent {
+    width: 70%;
+    position: absolute;
+    top: 0;
+    left: 30%;
+  }
+  
+  .showcase {
+    min-height: 544px;
+  }
+  
+  .showcase input[type="radio"]#five:checked ~ .pushDown {
+    margin-bottom: 150px;
+  }
+  
+  .modal__msg::before {
+    content: "Device width: 769px - 1200px";
+  }
+}
+
+@media (min-width: 1201px) {
+  .modal__msg::before {
+    content: "Device width: > 1200px";
+  }
+}
+
+@media (max-width: 960px) {
+  .graph {
+    float: none;
+    width: 100%;
+  }
+
+  .y-axis {
+    width: 12%;
+  }
+
+  .x-axis {
+    width: 83%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabContent {
+    margin-bottom: 5px;
+    border-top: 0;
+  }
+  .y-axis {
+    width: 20%;
+  }
+
+  .x-axis {
+    width: 75%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 10px 0;
+  }
+
+  .nav__search {
+    margin-top: 2px;
+  }
+
+  .section {
+    padding: 30px 20px;
+  }
+
+  .section h1 {
+    font-size: 36px;
+  }
+
+  .y-axis li,
+  .x-axis li {
+    font-size: 12px;
+  }
+
+  .x-axis li {
+    padding: 20px 8px 0 8px;
+  }
+
+  .carousel__left {
+    left: 0;
+  }
+
+  .carousel__right {
+    right: 0;
+  }
+}
