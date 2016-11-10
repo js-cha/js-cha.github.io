@@ -358,10 +358,10 @@ input[type="checkbox"]#modalToggle:checked ~ label .overlay {
 }
 
 .slide__frame {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px;
   background-color: #fff;
 }
 

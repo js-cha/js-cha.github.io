@@ -47,7 +47,7 @@
   }
   
   .showcase > input[type="radio"]#five:checked ~ .pushDown {
-    margin-bottom: 250px;
+    margin-bottom: 1500px;
   }
   
   .modal__msg::before {
