@@ -27,7 +27,7 @@
     if (cookie_jar.filter(checkVisitor) == false) {
       document.cookie = "visited=true";
       console.log("welcome");
-    } else if (cookie_jar.filter(checkVisitor) == true) {
+    } else if (cookie_jar.filter(checkVisitor).length >= 1) {
       console.log("welcome back");
     }
   });
