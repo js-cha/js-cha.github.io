@@ -21,14 +21,17 @@
 
   document.addEventListener("DOMContentLoaded", function(event) {
     var cookies = document.cookie;
+    var message = document.getElementById("personal_message");
 
     extractCookies(cookies);
 
-    if (cookie_jar.filter(checkVisitor) == false) {
+    if (cookie_jar.filter(checkVisitor).length == 0) {
       document.cookie = "visited=true";
-      console.log("welcome");
+      message.innerHTML = "You have landed on my portfolio, please feel free to browse. And I almost forgot, don't forget to offer me a six figure salary if you like what you see here";
+
     } else if (cookie_jar.filter(checkVisitor).length >= 1) {
       console.log("welcome back");
+      message.innerHTML = "I see you have returned, I hope your stay is delightful as the first";
     }
   });
 
