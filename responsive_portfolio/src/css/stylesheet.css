@@ -394,7 +394,7 @@ input[type="checkbox"]#modalToggle:checked ~ label .overlay {
 
 .carousel input[type="radio"]:nth-of-type(1):checked ~ .slide--1.slide,
 .carousel input[type="radio"]:nth-of-type(2):checked ~ .slide--2.slide,
-.carousel input[type="radio"]:nth-of-type(3):checked ~ .slide--3.slide, 
+.carousel input[type="radio"]:nth-of-type(3):checked ~ .slide--3.slide,
 .carousel input[type="radio"]:nth-of-type(4):checked ~ .slide--4.slide {
   display: block;
 }
@@ -497,7 +497,7 @@ input[type="checkbox"]#modalToggle:checked ~ label .overlay {
   height: 360px;
   margin-top: 20px;
   margin-right: 5%;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .graph h2 {
@@ -533,7 +533,7 @@ input[type="checkbox"]#modalToggle:checked ~ label .overlay {
 /* Start Contact */
 #contact ul {
   margin: 0;
-  padding: 0 0 0 20px;                                                                                                                                                                                                                                                                            
+  padding: 0 0 0 20px;
 }
 
 #contact li {

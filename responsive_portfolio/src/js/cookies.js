@@ -25,7 +25,7 @@
 
     extractCookies(cookies);
 
-    if (cookie_jar.filter(checkVisitor).length == 0) {
+    if (cookie_jar.filter(checkVisitor).length === 0) {
       document.cookie = "visited=true";
       message.innerHTML = "You have landed on my portfolio, please feel free to browse. And I almost forgot, don't forget to offer me a six figure salary if you like what you see here";
 
