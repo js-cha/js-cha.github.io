@@ -18,7 +18,8 @@ gulp.task('imagemin', function() {
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-      baseDir: 'src'
+      baseDir: 'dist',
+      index: 'html/index.html'
     }
   })
 });
@@ -37,4 +38,4 @@ gulp.task('watch', ['browserSync'], function() {
   gulp.watch('src/js/*.js').on('change', browserSync.reload);
 });
 
-gulp.task('build', ['lint', 'useref', 'imagemin']);
+gulp.task('build', ['useref', 'imagemin']);
