@@ -18,7 +18,7 @@ gulp.task('imagemin', function() {
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-      baseDir: 'dist',
+      baseDir: 'src',
       index: 'html/index.html'
     }
   })
