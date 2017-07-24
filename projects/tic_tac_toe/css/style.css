@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #653e5a;
+}
+
+#board,
+.cover {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+
+.cell:nth-of-type(2),
+.cell:nth-of-type(5),
+.cell:nth-of-type(8) {
+  border-left: 1px solid #8a547c;
+  border-right: 1px solid #8a547c;
+}
+
+.cell:nth-of-type(4),
+.cell:nth-of-type(5),
+.cell:nth-of-type(6) {
+  border-top: 1px solid #8a547c;
+  border-bottom: 1px solid #8a547c;
+}
+
+.cell img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cover {
+  background-color: transparent;
+  z-index: 1111111;
+}
+
+.hidden {
+  display: none;
+}
+
+#board::after {
+  content: '';
+  position: absolute;
+  background-color: #db0fa4;
+  transition: all 500ms;
+}
+
+#board.vert::after {
+  width: 3px;
+  height: 0;
+  transition: height 500ms;
+}
+
+#board.vert-1::after {
+  left: 50px;
+}
+
+#board.vert-2::after {
+  left: 150px;
+}
+
+#board.vert-3::after {
+  left: 250px;
+}
+
+#board.vert-animate::after {
+  height: 100%;
+}
+
+#board.hori::after {
+  height: 3px;
+  width: 0;
+  left: 0;
+  transition: width 500ms;
+}
+
+#board.hori-1::after {
+  top: 50px;
+}
+
+#board.hori-2::after {
+  top: 150px;
+}
+
+#board.hori-3::after {
+  top: 250px;
+}
+
+#board.hori-animate::after {
+  width: 100%;
+}
+
+#board.diag::after {
+  width: 3px;
+  height: 0;
+  top: 0;
+  transition: height 500ms;
+}
+
+#board.diag-1::after {
+  left: 0;
+  transform: rotateZ(-45deg);
+  transform-origin: 50% 0;
+}
+
+#board.diag-2::after {
+  right: 0;
+  transform: rotateZ(45deg);
+  transform-origin: 0% 0;
+}
+
+#board.diag-animate::after {
+  height: 140%;
+}
+
+#start {
+  background-color: #d42666;
+  color: #ffffff;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border-bottom: 3px solid #a0014a;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#start:active {
+  border-bottom: 3px solid #d42666;
+  top: 70.2%;
+}
+
+.announcement {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+  margin-top: 250px;
+}
