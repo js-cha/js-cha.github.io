@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#my-calendar {
+  margin: 50px;
+}
+
+.calendar-times {
+  float: left;
+  margin-right: 10px;
+}
+
+.calendar-times label {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #927857;
+  margin-bottom: 16px;
+  text-align: right;
+}
+
+.calendar-times label:nth-child(odd) {
+  font-weight: bold;
+}
+
+.calendar-times label:nth-child(even) {
+  font-size: 11px;
+}
+
+.calendar-events {
+  position: relative;
+  float: left;
+  width: 600px;
+  height: 720px;
+  padding: 0 10px;
+  background-color: #f3eee8;
+  border-left: 1px solid #e2d9d0
+}
+
+.calendar-event {
+  width: 579px;
+  position: absolute;
+  background-color: #fff;
+  padding: 3px;
+  border: 1px solid #e2d9d0;
+  border-left: 4px solid #ab8652;
+}
+
+.calendar-event-clash {
+  width: 289.5px;
+}
+
+.calendar-event-clash:nth-child(even) {
+  left: 299.5px;
+}
+
+.calendar-event h4,
+.calendar-event p {
+  margin: 0;
+  padding: 0;
+  color: #a5855f;
+}
+
+.calendar-event h4 {
+  font-size: 13px;
+}
+
+.calendar-event p {
+  font-size: 10px;
+  margin-top: 3px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <style>
+    .album {
+      border: 1px solid #eee;
+      width: 150px;
+      height: 250px;
+      margin: 1px;
+      float: left;
+    }
+
+    .album img {
+      display: block;
+    }
+
+    .pre-loader {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    .pre-loader img {
+      display: block;
+      left: 50%;
+      top: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .photobox {
+      background: white;
+      position: absolute;
+      padding: 20px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: 500px;
+    }
+
+    div[class^="page-"] {
+      overflow: hidden;
+    }
+
+  </style>
+  <div class="pre-loader hidden">
+    <img src="images/496.gif">
+  </div>
+  <div id="album-viewer"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="javascript.js"></script>
+  <script src="javascript_2.js"></script>
+
+  <script>
+    $('#album-viewer').photoalbum();
+    $('#album-viewer').photobox();
+  </script>
+
+</body>
+</html>
