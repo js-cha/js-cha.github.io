@@ -53,7 +53,7 @@ class Board {
   }
 
   symbol(symbol) {
-    let img = $('<img>').attr('src', `../pa3_tic_tac_toe/images/${symbol}.png`);
+    let img = $('<img>').attr('src', `images/${symbol}.png`);
     return img[0];
   }
 
