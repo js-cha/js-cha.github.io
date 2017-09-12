@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Blog Component</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <div class="container">
+    <div id="photo-blog-component"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="javascript.js"></script>
+
+  <script>
+    $('#photo-blog-component').photoblog([
+      {
+        link: "https://images.unsplash.com/photo-1483347756197-71ef80e95f73",
+        alt: "northern lights",
+        credit: "Daniel Ishea",
+        text: "They are never part of the main DOM tree. The usual use case is to create the document fragment, append elements to the document fragment and then append the document fragment to the DOM tree."
+      },
+      {
+        link: "https://images.unsplash.com/photo-1483347756197-71ef80e95f73",
+        alt: "northern lights",
+        credit: "Daniel Ishea",
+        text: "DocumentFragments are DOM Nodes. In the DOM tree, the document fragment is replaced by all its children."
+      }
+    ]);
+  </script>
+
+
+</body>
+</html>
