@@ -9,22 +9,27 @@
     <div id="photo-blog-component"></div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="javascript.js"></script>
 
   <script>
-    $('#photo-blog-component').photoblog([
+    var photoblog = new PhotoBlog([
       {
-        link: "https://images.unsplash.com/photo-1483347756197-71ef80e95f73",
-        alt: "northern lights",
-        credit: "Daniel Ishea",
-        text: "They are never part of the main DOM tree. The usual use case is to create the document fragment, append elements to the document fragment and then append the document fragment to the DOM tree."
+        link: "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/UHR5UXPD7M.jpg",
+        alt: "desk macbook",
+        credit: "Shotstash.com",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
       {
-        link: "https://images.unsplash.com/photo-1483347756197-71ef80e95f73",
-        alt: "northern lights",
-        credit: "Daniel Ishea",
-        text: "DocumentFragments are DOM Nodes. In the DOM tree, the document fragment is replaced by all its children."
+        link: "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/AEYVYWJPH6.jpg",
+        alt: "dog pet",
+        credit: "Katie Frego",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      {
+        link: "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/5TOQESCBWY.jpg",
+        alt: "airplane flying",
+        credit: "Salvatore Ventura",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       }
     ]);
   </script>
