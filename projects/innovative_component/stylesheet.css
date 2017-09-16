@@ -7,21 +7,34 @@ body {
   padding: 0;
 }
 
+img {
+  width: 100%;
+}
+
 .container {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 #photo-blog-component {
   width: 100%;
-  padding: 20px;
+  padding: 0 20px;
   border: 1px solid #eee;
 }
 
+#photo-blog-component h1 {
+  margin-bottom: 0;
+}
+
 .photo-blog__section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #eee;
+}
+
+.photo-blog__heading {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .photo-blog__text {
@@ -29,13 +42,12 @@ body {
   font-size: 18px;
   line-height: 160%;
   color: #101010;
-  margin-top: 0;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
 .photo-blog__media {
   display: block;
-  max-width: 100%;
 }
 
 .photo-blog__media-credit {
@@ -44,6 +56,76 @@ body {
   color: #151515;
   font-size: 13px;
   font-style: italic;
+}
+
+.img-container {
+  position: relative;
+}
+
+.video-container {
+  position: relative;
+}
+
+.video-container img {
+  opacity: 0.75;
+}
+
+.play-btn::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 60px solid #ea0707;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  cursor: pointer;
+}
+
+button {
+  display: block;
+  width: 50px;
+  height: 45px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.65);
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 0;
+  background-color: rgba(255, 255, 255, .65);
+  background: -webkit-linear-gradient(top right, transparent, rgba(255, 255, 255, .65));
+  background: -o-linear-gradient(top right, transparent, rgba(255, 255, 255, .65));
+  background: -moz-linear-gradient(top right, transparent, rgba(255, 255, 255, .65));
+  background: linear-gradient(top right, transparent, rgba(255, 255, 255, .65));
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  width: 45px;
+  height: 40px;
+  border-left: 1px solid rgba(255, 255, 255, .25);
+  border-bottom: 1px solid rgba(255, 255, 255, .25);
+  z-index: 1;
+}
+
+button::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 45px;
+  height: 40px;
+  border-left: 1px solid rgba(255, 255, 255, .25);
+  border-bottom: 1px solid rgba(255, 255, 255, .25);
+  z-index: 1;
 }
 
 @media (max-width: 768px) {

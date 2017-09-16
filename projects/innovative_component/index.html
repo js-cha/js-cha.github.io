@@ -12,23 +12,32 @@
   <script src="javascript.js"></script>
 
   <script>
-    var photoblog = new PhotoBlog([
+    var photoblog = new PhotoBlog("Photo Blog Title", [
       {
-        link: "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/UHR5UXPD7M.jpg",
-        alt: "desk macbook",
-        credit: "Shotstash.com",
+        media: {
+          type: "img",
+          src: "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/UHR5UXPD7M.jpg",
+          alt: "desk macbook",
+          credit: "Shotstash.com"
+        },
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
       {
-        link: "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/AEYVYWJPH6.jpg",
-        alt: "dog pet",
-        credit: "Katie Frego",
+        media: {
+          type: "video",
+          src: "https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4",
+          poster: "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/AEYVYWJPH6.jpg",
+          credit: "Katie Frego"
+        },
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
       {
-        link: "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/5TOQESCBWY.jpg",
-        alt: "airplane flying",
-        credit: "Salvatore Ventura",
+        media: {
+          type: "img",
+          src: ["https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/5TOQESCBWY.jpg", "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/UHR5UXPD7M.jpg", "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/AEYVYWJPH6.jpg"],
+          credit: "Salvatore Ventura"
+        },
+        heading: "Lorem ipsum dolor",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       }
     ]);
