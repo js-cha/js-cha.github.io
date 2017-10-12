@@ -15,45 +15,66 @@ function createSection() {
 
 function createImageObject(obj) {
   if (obj.media.src.constructor === Array) {
+    var docFrag = document.createDocumentFragment();
     var imageContainer = document.createElement('div');
-    var images = obj.media.src;
-    var cycleButton = document.createElement('button');
     var mainImage = document.createElement('img');
+    var cycleButton = document.createElement('button');
+    var images = obj.media.src;
+    var mediaCredit = createMediaCredit(obj.media.src[0].credit);
+
     mainImage.setAttribute('class', 'photo-blog__media');
     mainImage.setAttribute('data-img-pos', '0');
-    mainImage.setAttribute('src', images[0]);
+    mainImage.setAttribute('src', images[0].src);
+    mainImage.setAttribute('alt', images[0].alt);
 
     imageContainer.append(mainImage);
     imageContainer.append(cycleButton);
     imageContainer.setAttribute('class', 'img-container');
 
     cycleButton.innerText = 'Next';
-
     cycleButton.addEventListener('click', function cycle() {
       var siblingImage = this.previousSibling;
       var currPos = Number(siblingImage.getAttribute('data-img-pos'));
 
       if (currPos === images.length - 1 ) {
         siblingImage.setAttribute('data-img-pos', '0');
-        siblingImage.setAttribute('src', images[Number(0)]);
+        siblingImage.setAttribute('src', images[Number(0)].src);
+        siblingImage.setAttribute('alt', images[Number(0)].alt);
+        mediaCredit.innerText = images[Number(0)].credit
       } else {
         siblingImage.setAttribute('data-img-pos', Number(currPos + 1));
-        siblingImage.setAttribute('src', images[Number(currPos + 1)]);
+        siblingImage.setAttribute('src', images[Number(currPos + 1)].src);
+        siblingImage.setAttribute('alt', images[Number(currPos + 1)].alt);
+        mediaCredit.innerText = images[Number(currPos + 1)].credit
       }
     });
 
-    return imageContainer;
+    docFrag.appendChild(imageContainer);
+    docFrag.appendChild(mediaCredit);
+
+    return docFrag;
   } else {
+    var docFrag = document.createDocumentFragment();
     var image = document.createElement('img');
+    var mediaCredit = createMediaCredit(obj.media.credit);
+
     image.setAttribute('class', 'photo-blog__media');
     image.setAttribute('src', obj.media.src);
     image.setAttribute('alt', obj.media.alt);
-    return image;
+
+    docFrag.appendChild(image)
+    docFrag.appendChild(mediaCredit)
+
+    return docFrag;
   }
 
 }
 
 function createVideoObject(obj) {
+  var docFrag = document.createDocumentFragment();
+
+  var mediaCredit = createMediaCredit(obj.media.credit);
+
   var videoContainer = document.createElement('div');
   videoContainer.setAttribute('class', 'video-container');
   videoContainer.classList.add('play-btn');
@@ -78,7 +99,10 @@ function createVideoObject(obj) {
     this.removeEventListener('click', lazyLoad);
   });
 
-  return videoContainer;
+  docFrag.appendChild(videoContainer)
+  docFrag.appendChild(mediaCredit);
+
+  return docFrag;
 }
 
 function createMediaObject(obj) {
@@ -96,26 +120,26 @@ function createMediaObject(obj) {
   return media;
 }
 
-function createMediaCredit(obj) {
+function createMediaCredit(credit) {
   var author = document.createElement('small');
   author.setAttribute('class', 'photo-blog__media-credit');
-  author.innerText = obj.media.credit;
+  author.innerText = credit;
 
   return author;
 }
 
-function createHeading(string) {
+function createHeading(str) {
   var heading = document.createElement('h3');
   heading.setAttribute('class', 'photo-blog__heading');
-  heading.innerText = string;
+  heading.innerText = str;
 
   return heading;
 }
 
-function createDescription(string) {
+function createDescription(str) {
   var description = document.createElement('p');
   description.setAttribute('class', 'photo-blog__text');
-  description.innerText = string;
+  description.innerText = str;
 
   return description;
 }
@@ -133,20 +157,17 @@ PhotoBlog.prototype.processConfig = function() {
 
 PhotoBlog.prototype.createMarkup = function(obj) {
   var media = createMediaObject(obj),
-      credit = createMediaCredit(obj),
       desc = createDescription(obj.text),
       section = createSection();
 
   if (obj.heading) {
     var heading = createHeading(obj.heading);
-    section.append(heading);
     section.append(media);
-    section.append(credit);
+    section.append(heading);
     section.append(desc);
   } else {
-    section.append(desc);
     section.append(media);
-    section.append(credit);
+    section.append(desc);
   }
 
   this.nodesArray.push(section);
