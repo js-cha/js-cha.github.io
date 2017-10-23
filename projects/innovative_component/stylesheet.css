@@ -11,15 +11,34 @@ img {
   width: 100%;
 }
 
-.container {
-  max-width: 1200px;
+.photo-blog-container {
+  max-width: 960px;
   margin: 0 auto;
+  position: relative;
+}
+
+.nav {
+  position: fixed;
+  top: 20px;
+}
+
+.indicator {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #9eadca;
+  margin-bottom: 10px;
+}
+
+.active-section {
+  background-color: #9eadca
 }
 
 #photo-blog-component {
   width: 100%;
   padding: 0 20px;
   border: 1px solid #eee;
+  margin-left: 44px;
 }
 
 #photo-blog-component h1 {
